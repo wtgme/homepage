@@ -1,6 +1,6 @@
-# README for Tao Wang's Homepage
+# README for Tao Wang's Academic Homepage
 
-Welcome to the homepage project for Tao Wang, a Research Fellow in Health Text Analytics and Data Science at King's College London. This project serves as an online portfolio showcasing Tao's research, publications, projects, and achievements.
+Welcome to the academic homepage project for Tao Wang, a Research Fellow in Health Text Analytics and Data Science at King's College London. This project serves as an online academic portfolio showcasing Tao's research, publications, projects, and achievements.
 
 ## Project Structure
 
@@ -17,8 +17,8 @@ homepage
 │       └── profile.jpg       # Profile picture for the homepage
 ├── components
 │   ├── about.html            # About section content
-│   ├── projects.html         # Current projects information
-│   ├── publications.html      # Selected publications list
+│   ├── research.html         # Research interests and projects
+│   ├── publications.html     # Publications list
 │   └── awards.html           # Awards and recognitions
 ├── index.html                # Main entry point for the homepage
 └── README.md                 # Project documentation
@@ -43,10 +43,11 @@ To set up and run the homepage locally, follow these steps:
 
 ## Features
 
-- **Responsive Design**: The homepage is designed to be responsive and accessible on various devices.
-- **Navigation**: Easy navigation to different sections including About, Current Projects, Selected Publications, and Awards.
-- **Contact Information**: Direct links to contact via email and social media profiles.
+- **Academic Focus**: Highlights research, publications, and academic achievements.
+- **Responsive Design**: Accessible on various devices.
+- **Navigation**: Easy access to sections such as About, Research, Publications, and Awards.
+- **Contact Information**: Direct links to email and academic profiles.
 
 ## Acknowledgments
 
-This project is a personal initiative to showcase research and contributions in the field of Health Text Analytics and Data Science. For any inquiries or feedback, please contact Tao Wang at [tao.wang@kcl.ac.uk](mailto:tao.wang@kcl.ac.uk).
+This project is a personal initiative to showcase academic contributions in Health Text Analytics and Data Science. For inquiries or feedback, please contact Tao Wang at [tao.wang@kcl.ac.uk](mailto:tao.wang@kcl.ac.uk).

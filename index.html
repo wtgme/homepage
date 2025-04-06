@@ -3,52 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tao Wang - Homepage</title>
+    <title>Tao Wang - Health Text Analytics & Data Science</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="assets/img/profile.jpg" alt="Tao Wang" class="profile-photo">
-        <h1>Tao Wang</h1>
-        <p>Research Fellow in Health Text Analytics & Data Science</p>
-        <p>King's College London</p>
-        <nav>
-            <ul>
-                <li><a href="components/about.html">About</a></li>
-                <li><a href="components/research.html">Research</a></li>
-                <li><a href="components/publications.html">Publications</a></li>
-                <li><a href="components/awards.html">Awards</a></li>
+    <nav class="top-nav">
+        <div class="nav-container container">
+            <a href="index.html" class="brand">Tao Wang</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#awards">Awards</a></li>
                 <li><a href="mailto:tao.wang@kcl.ac.uk">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
     
-    <main>
-        <section class="profile-section">
-            <div class="profile-info">
-                <h2>Welcome to My Homepage</h2>
-                <p>I am a Research Fellow at the Department of Biostatistics & Health Informatics, King's College London. My research focuses on exploring the intersection of clinical research and AI to advance mental health outcomes.</p>
-                <p>My primary research interests include Natural Language Processing, Health Data Science, Multimodal Learning, Knowledge Graph, and Clinical Decision Support systems.</p>
-                <p>I currently lead several research projects funded by various institutions, including work on medical timeline extraction from clinical notes using large language models, and improving identification of treatment resistant schizophrenia using generative AI.</p>
+    <section class="hero">
+        <div class="hero-content container">
+            <div class="profile-image-container">
+                <img src="assets/img/profile.jpg" alt="Tao Wang" class="profile-image">
+                <div class="profile-links">
+                    <a href="https://scholar.google.com/citations?user=zaZOPWsAAAAJ" target="_blank" title="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://orcid.org/0000-0002-0437-0557" target="_blank" title="ORCID">
+                        <i class="fab fa-orcid"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tao-wang-uk/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
-            <img src="assets/img/profile.jpg" alt="Tao Wang" class="profile-photo">
+            <div class="profile-info">
+                <h1>Tao Wang</h1>
+                <p>Research Fellow, King's College London</p>
+                <p>Advisor, Meta Global Eating Disorder and Body Image Advisory Group</p>
+                <p>Member, King's Institute for Artificial Intelligence</p>
+                <p>Honorary Staff, South London and Maudsley NHS Foundation Trust</p>
+                <p>Co-chair, NLP Interest Group at BHI</p>  
+                <p>Email: <a href="mailto:tao.wang@kcl.ac.uk">tao.wang@kcl.ac.uk</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <main class="main-content">
+        <section id="about">
+            <h2>About</h2>
+            <p>I am a Research Fellow in Health Text Analytics and Data Science within the Department of Biostatistics & Health Informatics (BHI) at King’s College London. My research focuses on applying advanced artificial intelligence techniques to address healthcare challenges, with a particular emphasis on mental health. I aim to develop innovative AI-driven solutions that integrate data science and health research to improve patient outcomes. In addition to my primary role, I serve as an Advisor to the Meta Global Eating Disorder and Body Image Advisory Group, a Member of the King’s Institute for Artificial Intelligence, Honorary Staff at South London and Maudsley NHS Foundation Trust, and Co-chair of the NLP Interest Group at BHI.</p>
+            <p><a href="components/about.html">Learn more about me →</a></p>
         </section>
-
-        <section>
-            <h2>Recent Publications</h2>
-            <ul class="publication-list">
-                <li>Wang, T., Codling, D., Msosa, Y., Broadbent, M., et al. (2025). VIEWER: an extensible visual analytics framework for enhancing mental healthcare. Journal of the American Medical Informatics Association.</li>
-                <li>Wang, T., Codling, D., Bhugra, D., Msosa, Y., et al. (2023). Unraveling ethnic disparities in antipsychotic prescribing among patients with psychosis: a retrospective cohort study based on electronic clinical records. Schizophrenia Research.</li>
+        
+        <section id="research">
+            <h2>Research</h2>
+            <p>Motivated by a deep passion for transforming healthcare through technology, my research sits at the intersection of artificial intelligence, health data science, and clinical informatics. I focus on developing cutting-edge computational methods to tackle real-world healthcare challenges, with a strong emphasis on advancing outcomes in complex mental health. By leveraging diverse data sources—from clinical records to social media—I use natural language processing and multimodal learning to uncover meaningful patterns in human behavior and health outcomes. My work has led to actionable insights for population health management and the development of clinical decision support tools that drive better care and patient outcomes. My research interests include: </p>
+            <ul>
+                <li>Natural Language Processing</li>
+                <li>Health Data Science</li>
+                <li>Multimodal Learning in Healthcare Applications</li>
+                <li>Knowledge Graphs for Medical Information</li>
+                <li>Clinical Decision Support Systems</li>
+            </ul>
+            <p><a href="components/research.html">Explore my research →</a></p>
+        </section>
+        
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul id="recent-publications" class="publication-list">
+                <!-- Publications will be loaded dynamically -->
             </ul>
             <p><a href="components/publications.html">View all publications →</a></p>
         </section>
+        
+        <section id="awards">
+            <h2>Awards</h2>
+            <ul id="recent-awards" class="awards-list">
+                <!-- Awards will be loaded dynamically -->
+            </ul>
+            <p><a href="components/awards.html">See all awards →</a></p>
+        </section>
     </main>
-
+    
     <footer>
-        <p>📫 Email: <a href="mailto:tao.wang@kcl.ac.uk">tao.wang@kcl.ac.uk</a></p>
-        <p>🔗 <a href="https://scholar.google.com/citations?user=zaZOPWsAAAAJ">Google Scholar</a> | <a href="https://www.linkedin.com/in/tao-wang-uk/">LinkedIn</a> | <a href="https://orcid.org/0000-0002-0437-0557">ORCID</a></p>
+        <p>Contact: <a href="mailto:tao.wang@kcl.ac.uk">tao.wang@kcl.ac.uk</a></p>
+        <p>© 2025 Tao Wang</p>
     </footer>
-
-    <script src="assets/js/main.js"></script>
 </body>
 </html>

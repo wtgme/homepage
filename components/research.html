@@ -7,71 +7,97 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Research</h1>
-        <p>Research Interests and Projects</p>
-        <nav>
-            <ul>
+    <nav class="top-nav">
+        <div class="nav-container container">
+            <a href="../index.html" class="brand">Tao Wang</a>
+            <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="research.html">Research</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="awards.html">Awards</a></li>
                 <li><a href="mailto:tao.wang@kcl.ac.uk">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
     
-    <main>
-        <section>
-            <h2>Research Interests</h2>
+
+    
+    <main class="main-content">
+        <h2>Research Interests</h2>
+        <ul>
+            <li><strong>Clinical Natural Language Processing:</strong> Extracting meaningful information from unstructured clinical text, developing methods for timeline extraction, and creating models for understanding clinical narratives</li>
+            <li><strong>Health Data Science:</strong> Using advanced analytics to derive insights from large-scale healthcare datasets, including electronic health records and clinical notes</li>
+            <li><strong>Multimodal Learning:</strong> Combining different data modalities (text, structured data, images) for comprehensive healthcare applications</li>
+            <li><strong>Knowledge Graphs:</strong> Building and utilizing medical knowledge graphs to enhance reasoning and inference in clinical applications</li>
+            <li><strong>Health Informatics:</strong> Developing tools and systems to support clinical decision-making and improve healthcare delivery</li>
+            <li><strong>Mental Health Analytics:</strong> Applying AI to understand, monitor, and improve mental healthcare services and outcomes</li>
+        </ul>
+
+        <h2 id="current-projects">Current Research Projects</h2>
+        
+        <div class="project" id="viewer">
+            <h3>VIEWER Framework: Visual Analytics for Mental Healthcare</h3>
+            <p>VIEWER is an extensible visual analytics framework for enhancing mental healthcare delivery through population health management. This project combines natural language processing, data visualization, and clinical expertise to create a tool that enables clinicians to monitor care quality, identify trends, and address health inequalities.</p>
+            <p><strong>Key achievements:</strong></p>
             <ul>
-                <li>Natural Language Processing</li>
-                <li>Health Data Science</li>
-                <li>Multimodal Learning</li>
-                <li>Knowledge Graph</li>
-                <li>Health Informatics</li>
+                <li>Development of a real-time dashboard for monitoring care quality across diverse mental health services</li>
+                <li>Integration of NLP capabilities to extract meaningful insights from unstructured clinical notes</li>
+                <li>Deployment in clinical settings with demonstrated impact on service improvement</li>
+                <li>Award-winning platform recognized for its innovative approach to healthcare analytics</li>
             </ul>
-        </section>
+        </div>
 
-        <section>
-            <h2>Current Research Projects</h2>
-            <div class="project">
-                <h3>ChronoMed: A Medical Timeline Builder for Clinical Text</h3>
-                <p>Developing medical timeline extraction from clinical notes using large language models.</p>
-            </div>
-
-            <div class="project">
-                <h3>Improving Identification of Treatment Resistant Schizophrenia</h3>
-                <p>Utilizing generative AI to better identify and understand treatment resistance patterns.</p>
-            </div>
-
-            <div class="project">
-                <h3>VIEWER: Visual Analytics for Mental Healthcare</h3>
-                <p>An extensible visual analytics framework to enhance mental healthcare delivery.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Research Funding</h2>
-            <ul class="awards-list">
-                <li>PI, Utilising GenAI and LLMs to improve antipsychotic treatment reviews for patients with schizophrenia. KHP Centre for Translational Medicine Pre-doctoral Clinical Research Excellence Fellowship, £80,000, 2025.</li>
-                <li>PI, ChronoMed: A Medical Timeline Builder for Clinical Text Using Large Language Models (LLMs), MHaPS Early Career Researcher Seed Funding, £19,938, 2025.</li>
-                <li>PI, Improving identification of treatment resistant schizophrenia using generative AI, King's Together, £19,609.80, 2024</li>
-                <li>Co-I, Repurposing clozapine in psychosis, Maudsley Charity, £458,000.00, 2023.</li>
-                <li>PI, Exploiting a distantly supervised approach for clinical relation extraction, £2,500, Early Career Research Award, Institute of Psychiatry, Psychology & Neuroscience, 2022-2023.</li>
-                <li>Collaborator, On the Economics of Salience, BA/Leverhulme Small Research Grants Awards, £9,000, 2019-20 Round. </li>
-                <li>Recipient, PhD Enrichment Scholarship Award, The Alan Turing Institute, £22,000, 2017.</li>
-                <li>Recipient, Travel grant for visiting University of Western Australia, 2017.</li>
-                <li>Recipient, ESRC PhD Scholarship, Economic and Social Research Council, 2015.</li>    
+        <div class="project" id="chronomed">
+            <h3>ChronoMed: Medical Timeline Extraction</h3>
+            <p>ChronoMed is a medical timeline builder that extracts clinical events from electronic health records using large language models (LLMs). This project addresses the critical need to reconstruct patient journeys from unstructured clinical documentation, providing clinicians with a comprehensive view of a patient's medical history.</p>
+            <p><strong>Key features:</strong></p>
+            <ul>
+                <li>Implementation of advanced LLMs for temporal information extraction</li>
+                <li>Development of specialized prompting techniques for clinical text analysis</li>
+                <li>Creation of visualization tools for intuitive timeline representation</li>
+                <li>Integration with existing clinical systems for seamless workflow</li>
             </ul>
-        </section>
+        </div>
+
+        <div class="project" id="schizophrenia">
+            <h3>Improving Identification of Treatment-Resistant Schizophrenia</h3>
+            <p>This project utilizes generative AI to better identify and understand treatment resistance patterns in schizophrenia. By analyzing complex clinical data, including medication histories, symptom profiles, and treatment responses, we aim to develop better predictive models for treatment resistance.</p>
+            <p><strong>Research goals:</strong></p>
+            <ul>
+                <li>Development of NLP models to extract medication information and treatment response indicators</li>
+                <li>Creation of predictive algorithms to identify patients at risk of treatment resistance</li>
+                <li>Analysis of clinical pathways to understand factors contributing to treatment resistance</li>
+                <li>Implementation of decision support tools to guide clinical interventions</li>
+            </ul>
+        </div>
+
+        <h2>Research Funding</h2>
+        <ul class="awards-list">
+            <li><strong>PI</strong>, Utilising GenAI and LLMs to improve antipsychotic treatment reviews for patients with schizophrenia. KHP Centre for Translational Medicine Pre-doctoral Clinical Research Excellence Fellowship, £80,000, 2025.</li>
+            <li><strong>PI</strong>, ChronoMed: A Medical Timeline Builder for Clinical Text Using Large Language Models (LLMs), MHaPS Early Career Researcher Seed Funding, £19,938, 2025.</li>
+            <li><strong>PI</strong>, Improving identification of treatment resistant schizophrenia using generative AI, King's Together, £19,609.80, 2024</li>
+            <li><strong>Co-I</strong>, Repurposing clozapine in psychosis, Maudsley Charity, £458,000.00, 2023.</li>
+            <li><strong>PI</strong>, Exploiting a distantly supervised approach for clinical relation extraction, £2,500, Early Career Research Award, Institute of Psychiatry, Psychology & Neuroscience, 2022-2023.</li>
+            <li><strong>Collaborator</strong>, On the Economics of Salience, BA/Leverhulme Small Research Grants Awards, £9,000, 2019-20 Round.</li>
+            <li><strong>Postdoctoral Researcher</strong>, AVERT – AI-based Virtual Environment for Risk Tracking in mental health. UK Research and Innovation, £635,875, Jul 2018 – Oct 2020.</li>
+            <li><strong>Postdoctoral Researcher</strong>, CogStack in South London & Maudsley NHS Foundation Trust. Maudsley Charity, £345,074.00, Aug 2019 – Mar 2023.</li>
+            <li><strong>PI</strong>, PhD Enrichment Scholarship Award, The Alan Turing Institute, £22,000, 2017.</li>
+            <li><strong>Recipient</strong>, Travel grant for visiting University of Western Australia, £6,000, 2017.</li>
+            <li><strong>Recipient</strong>, ESRC PhD Scholarship, Economic and Social Research Council, £100,000, 2015.</li>    
+        </ul>
+
+        <h2>Impact</h2>
+        <p>My research has contributed to several impactful innovations in healthcare:</p>
+        <ul>
+            <li>Implementation of AI-driven decision support systems in NHS mental health services</li>
+            <li>Development of tools to monitor and address health disparities in mental healthcare</li>
+            <li>Creation of methods to enhance early detection and intervention in severe mental illness</li>
+            <li>Advancement of techniques for extracting meaningful information from clinical text</li>
+            <li>Design of visual analytics approaches to support population health management</li>
+        </ul>
     </main>
 
-    <footer>
-        <p>📫 Email: <a href="mailto:tao.wang@kcl.ac.uk">tao.wang@kcl.ac.uk</a></p>
-        <p>🔗 <a href="https://scholar.google.com/citations?user=zaZOPWsAAAAJ">Google Scholar</a> | <a href="https://www.linkedin.com/in/tao-wang-uk/">LinkedIn</a> | <a href="https://orcid.org/0000-0002-0437-0557">ORCID</a></p>
-    </footer>
 
     <script src="../assets/js/main.js"></script>
 </body>
