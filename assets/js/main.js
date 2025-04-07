@@ -87,4 +87,29 @@ document.addEventListener("DOMContentLoaded", () => {
             this.classList.add('active');
         });
     });
+
+    // Add fade-in animation for content sections
+    const contentSections = document.querySelectorAll('.main-content section');
+    contentSections.forEach((section, index) => {
+        // Set initial state
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        
+        // Set delay based on section index
+        const delay = 100 + (index * 150);
+        
+        // Trigger animation after a delay
+        setTimeout(() => {
+            section.style.opacity = '1';
+            section.style.transform = 'translateY(0)';
+        }, delay);
+    });
+
+    // Format the collaboration text with better styling
+    const collaborationText = document.querySelector('#about p[style="color: red;"]');
+    if (collaborationText) {
+        collaborationText.removeAttribute('style');
+        collaborationText.classList.add('collaboration-text');
+    }
 });
