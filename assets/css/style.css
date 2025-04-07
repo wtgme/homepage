@@ -43,22 +43,26 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row; /* Ensure horizontal layout */
+}
+
+.brand {
+  text-decoration: none;
+  color: #00008b;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .nav-links {
   display: flex;
-  flex-direction: row; /* Force horizontal layout */
   list-style: none;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: center; /* Align items vertically in the center */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
 }
 
 .nav-links li {
-  display: inline-block; /* Ensure inline display */
-  margin-left: 20px;
+  margin: 0 0 0 20px; /* Reset vertical margins and keep horizontal spacing */
+  padding: 0; /* Remove padding */
 }
 
 .nav-links a {
@@ -226,18 +230,6 @@ footer {
   color: #666;
 }
 
-@media (max-width: 800px) {
-  .nav-container {
-    flex-direction: row; /* Keep it horizontal even on smaller screens */
-  }
-  
-  .nav-links {
-    flex-direction: row; /* Keep it horizontal even on smaller screens */
-    flex-wrap: wrap; /* Allow wrapping on very small screens */
-    justify-content: flex-end;
-  }
-}
-
 @media (max-width: 600px) {
   .hero-content {
     flex-direction: column;
@@ -249,15 +241,17 @@ footer {
   }
 
   .nav-container {
-    flex-direction: column; /* Only stack on very small screens */
+    flex-direction: column;
   }
-  
+
   .nav-links {
+    margin-top: 15px;
     justify-content: center;
-    margin-top: 10px;
+    width: 100%; /* Full width for better spacing */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
   }
-  
+
   .nav-links li {
-    margin: 0 10px;
+    margin: 5px 10px; /* Even spacing around each item */
   }
 }
