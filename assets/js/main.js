@@ -28,6 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 const doc = parser.parseFromString(html, "text/html");
                 const awards = doc.querySelectorAll(".awards-list li");
                 const recentAwards = Array.from(awards).slice(0, 5); // Limit to 5 awards
+                
+                // Clear existing content to prevent duplication
+                recentAwardsList.innerHTML = '';
+                
                 recentAwards.forEach(award => {
                     const listItem = document.createElement("li");
                     listItem.innerHTML = award.innerHTML;
